@@ -1,12 +1,23 @@
 body {
 	background-color: black;
+	text-align: center;
 }
 
 h1, p {
 	color: gold;
 }
 
+p { text-decoration: underline;
+
+}
+
 h2 {
 	color: white;
+	font-weight: normal;
 
+}
+
+a {
+	font-style: italic;
+	text-decoration: none;
 }
