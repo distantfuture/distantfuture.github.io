@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300');
+
 h1 {
 
 	color: white;
 	background-color: rgb(17,130,0);
 	text-align: center;
 	font-family: Helvetica, sans-serif;
-	font-size: 40px
+	font-size: 50px
 
 }
 body {
@@ -17,9 +19,9 @@ body {
 
 #slogan {
 
-	text-decoration: italic;
-	font-family: "Snell Roundhand", cursive;
-	font-size: 24px;
+	font-family: "Amatic SC", cursive;
+	font-size: 28px;
+	font-weight: bold;
 	flood-color: green;
 }
 ul {
@@ -51,8 +53,8 @@ a {
 p {
 
 	color: green;
-	font-family: "Comic Sans MS", "Comic Sans", cursive;
-	font-size: 15px;
+	font-family: "Open Sans Condensed", "Comic Sans MS", "Comic Sans", sans-serif;
+	font-size: 20px;
 	font-weight: bold;
 
 } 
@@ -62,4 +64,9 @@ hr {
     color: dimgrey !important;
     height: 5px !important;
     width: 300px !important;
+}
+
+#mmessage {
+
+	
 }
