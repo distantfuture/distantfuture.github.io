@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300');
+
+h1{
+
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+
+}
+
+h3 {
+
+	font-family: "Amatic SC", cursive;
+	font-weight: bold;
+	/*font spacing next*/
+
+}
