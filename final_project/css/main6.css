@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Dosis|Indie+Flower|Open+Sans+Condensed:300');
+/*font-family: 'Amatic SC', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Anton', sans-serif;*/
+
+#wrapper {
+
+	background-color: #FFC51F;
+	margin: 0 auto;
+	padding: 0 auto;
+	min-height: 100%;
+
+}
+
+header {
+
+	background-color: rgb(0,0,0);
+	padding-left: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	
+
+
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+body {
+
+	
+
+}
+
+main {
+	margin: 1em;
+}
+
+img {
+	margin: 0.5em;
+	padding: none;
+	height: auto;
+	max-width: 100%;
+	float: left;	
+}
+
+
+h1 {
+
+	font-family: Dosis, Helvetica, sans-serif;
+	font-weight: normal;
+	padding: 0.1em;
+	margin-top: .5em;
+	font-size: 200%;
+	font-stretch: expanded;
+	font-weight: bold;
+	line-height: 1.3em;
+	float: left;
+
+
+}
+
+#logotext {
+
+	color: #fff;
+	margin: none;
+	padding: none;
+	float: left;
+
+}
+
+#giantq {
+
+	font-family: Helvetica, sans-serif;
+	font-size: 200%;
+	color: #fff;
+	margin: none;
+	padding: none;
+	border: none;
+	float: none;
+
+}
+
+
+nav {
+
+	font-family: "Amatic SC", cursive;
+	font-size: 40px;
+	letter-spacing: 0.3em;
+	
+}
+
+nav a {
+
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+
+}
+
+ul {
+
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+  float: left;
+  width: 18%;
+  height: 4em;
+  margin-top: 2em;
+  outline: 3px solid #222;
+  text-align: center;
+  line-height: 4em;
+  background: #fff;
+
+}
+
+span {
+
+	font-family: "Indie Flower", cursive;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: .25em;
+}
+
+
+
+#mission {
+
+		font-family: 'Dosis', sans-serif;
+		font-weight: bold;
+		line-height: 1.5em;
+		outline: 3px black solid;
+		padding: 10px;
+		width: 200px;
+		clear: both;
+		float: left;
+
+}
+
+footer {
+
+	text-align: right;
+	clear: both;
+	padding: 1em;
+	font-family: Arial;
+	font-size: 0.8em;
+}
+
+
+#stars {
+
+	margin: 2em;
+	border: thin;
+	color: rgba(255,242,244 .5);
+}
