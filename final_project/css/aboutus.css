@@ -5,14 +5,6 @@ font-family: 'Indie Flower', cursive;
 font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Anton', sans-serif;*/
 
-#wrapper {
-
-	background-color: #F7F6F4;
-	margin: 0 auto;
-	padding: 0;
-	min-height: 100%;
-
-}
 
 header {
 
@@ -23,6 +15,15 @@ header {
 	
 }
 
+body {
+	/*background-color: #FFC51F; original background colour*/
+	background-color: #F7F6F4;
+	margin: 0 auto;
+	padding: 0;
+	min-height: 100%;
+
+}
+
 img {
 	margin: 0.5em;
 	padding: none;
@@ -31,19 +32,14 @@ img {
 	float: left;	
 }
 
+h3 {
 
-h1 {
-
-	font-family: Dosis, Helvetica, sans-serif;
-	font-weight: normal;
-	padding: 0.1em;
-	margin-top: .5em;
-	font-size: 200%;
-	font-stretch: expanded;
-	font-weight: bold;
-	line-height: 1.3em;
-	float: left;
-
+	font-family: "Amatic SC", cursive;
+	font-size: 30px; 
+	padding: 1em 1em 0 1em;
+	margin: 0;
+	margin-top: 10px;
+	border: 0;
 }
 
 #logotext {
@@ -55,6 +51,7 @@ h1 {
 	padding-left: 10px;
 	border: 0;
 	float: left;
+	position: relative;
 	font-family: Dosis, Helvetica, sans-serif;
 	font-variant: small-caps;
 	font-weight: normal;
@@ -75,40 +72,114 @@ h1 {
 	padding-right: 0;
 	border: 0;
 	float: left;
+	position: relative;
+
+}
+
+
+nav {
+
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	padding: 20px 20px 20px 120px;
+	/*padding here is responsible for tall nav but hover is broken */
+	background: #fff;
+	color: #000;
 	
 }
 
-main {
+a {
+	font-family: Arial, sans-serif;
+	font-variant: small-caps;
+	text-decoration: none;
+	font-weight: normal;
+	
+	letter-spacing: 0.1em;
+	color: #000;
+	border-right: 1px solid #000;
+	padding-right:19px;
+	padding-left: 19px;
+	float: left;
+	margin: 0;
+	display: inline-block;
 
+}
+
+#home_nav {
+
+	border-left: 1px solid #000;
+}
+
+#contact_nav {
+
+	border-right: 1px solid #000;
+}
+
+#aboutus_nav {
+
+	color: #000; 
+	background-color: #FFC51F;
+}
+
+.border_nav {
+
+	/*border-bottom: 2px solid #000*/
+
+
+}
+
+#home_nav:hover {
+
+	color: #23A000;
+	background-color: #FAEDF4;
+	/*padding-bottom: 6px;
+	padding-top: 4px; ask how to do the create the hover style as desired*/
+
+}
+
+a:hover {
+
+	color: #fff; 
+	background-color: #000;
+	/*each nav element to have their own hover state, this is placeholder*/
+	
+}
+
+ul, p {
+
+	font-family: "Amatic SC", cursive;
+	font-size: 25px;
+	line-height: 1.5em;
+	padding: 2em;
+	padding-top: .3em;
+	padding-bottom: .3em;
+	font-weight: normal;
+
+}
+
+main {
+	
+	
+	width: 1440px;
 	margin: 0 auto;
 	display: table-cell;
 }
 
-section {
-	font-size: 16px;
+p {
+	margin-top: 1px;
 }
 
-article {
-
-		font-family: 'Dosis', sans-serif;
-		font-weight: bold;
-		line-height: 1.5em;
-		padding: 30px;
-		width: 200px;
-		background-color: #fff;
-		margin: 30px;
-		float: left;
-		display: table;
-
+ul {
+	padding-top: 0;
 }
 
-span {
+li {
 
-	font-family: "Indie Flower", cursive;
-	font-variant: small-caps;
-	font-weight: bold;
-	font-size: 30px;
-	letter-spacing: .25em;
+	padding-bottom: 10px;
+	padding-top: 0;
+	list-style: none;
+
 }
 
 hr {
@@ -124,108 +195,46 @@ hr {
        
 }
 
-nav {
+section, aside{
 
-	text-align: center;
-	margin: 0 auto;
-	padding: 20px 20px 20px 120px;
-	/*padding here is responsible for tall nav but hover is broken */
-	background: #fff;
-	color: #000;
 	
 }
 
-.nav_anchor {
-	
-	font-family: Arial, sans-serif;
-	font-variant: small-caps;
-	text-decoration: none;
-	font-weight: normal;
-	font-size: 30px;
-	letter-spacing: 0.1em;
-	color: #000;
-	border-right: 1px solid #000;
-	padding-right:19px;
-	padding-left: 19px;
+#statement1 {
+
 	float: left;
-	margin: 0;
-	display: inline-block;
+	background-color: #fff;
+	width: 500px;
+	height: 100%;
+	margin: 100px;
+	/*border: 2px solid black;*/
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: table;
+
 }
 
-/*either attempt to change main anchor selector one at a time or have all main nav's individual ID's
-added to CSS*/
-
-#home_nav {
-
-	border-left: 1px solid #000;
-	color: #000; 
-	background-color: #FFC51F;
+#ghost_div {
+	
+	float: left;
+	display: table;	
 }
 
-#contact_nav {
+#pinvolv {
 
-	border-right: 1px solid #000;
-}
-
-.nav_anchor:hover {
-
-	color: #fff; 
-	background-color: #000;
-	/*each nav element to have their own hover state, this is placeholder*/
+	float: left;
+	background-color: #fff;
+	width: 500px;
+	margin: 100px;
+	height: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: table;
 	
 }
-
-/*nav a {
-
-	text-decoration: none;
-	color: #000;
-	display: inline-block;
-
-}*/
-
-#hp_nav {
-
-	font-family: "Amatic SC", cursive;
-	font-size: 55px;
-	letter-spacing: 0.3em;
-	border: 0;
-	width: 960px;
-
-}
-
-a {
-	text-decoration: none;
-	
-}
-
-ul {
-
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-
-}
-
-li {
-
-
-
-}
-
-/*#moon {
-
-	clear: both;
-}
-
-#asteroids {
-
-	clear: both;
-}*/
 
 aside {
-
-	float: right;
-	clear: both;
+	/*border: 2px solid black;*/
 
 }
 
@@ -237,8 +246,9 @@ footer {
 	font-family: Arial;
 	font-size: 13px;
 	background-color: #fff;
-	/*border-top: 1px solid black;*/
+	border-top: 1px solid black;
 }
+
 .clearfix:after { 
    content: "."; 
    visibility: hidden; 
@@ -247,9 +257,20 @@ footer {
    clear: both;
 }
 
+@media only screen and (max-width: 1400px;) {
+
+	#statement1 {
+
+		width: 80%;
+	}
+	#pinvolv {
+		width: 80%;
+	}
+}
+
 /*#stars {
 
 	margin: 2em;
 	border: thin;
 	color: rgba(255,242,244 .5);
-}*/
+}

@@ -5,27 +5,28 @@ font-family: 'Indie Flower', cursive;
 font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Anton', sans-serif;*/
 
-#wrapper {
-
+body {
 	background-color: #F7F6F4;
 	margin: 0 auto;
 	padding: 0;
-	min-height: 100%;
+	height: auto;
+	width: 1024px;
 
 }
 
 header {
 
 	background-color: rgb(0,0,0);
-	padding-left: 1em;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	
+	width: 1024px;
+	max-width: 100%;
+
 }
 
 img {
 	margin: 0.5em;
-	padding: none;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 	height: auto;
 	max-width: 100%;
 	float: left;	
@@ -50,45 +51,40 @@ h1 {
 
 	color: #fff;
 	margin: 0;
-	margin-top: 25px;
+	font-size: 10px;
+	margin-top: 2em;
 	padding: 0;
-	padding-left: 10px;
+	padding-left: .3em;
 	border: 0;
 	float: left;
 	font-family: Dosis, Helvetica, sans-serif;
 	font-variant: small-caps;
 	font-weight: normal;
-	font-size: 30px;
 	letter-spacing: 0.3em;
 
 }
 
 #giantq {
 
-	font-family: Dosis, Helvetica, sans-serif;
-	font-size: 100px;
-	color: #fff;
+	font-size: 65px;
 	margin: 0;
-	padding-top: 18px;
-	padding-bottom: 0;
-	padding-left: 5px;
-	padding-right: 0;
+	padding: .12em 0 0 .08em; 
 	border: 0;
 	float: left;
 	
 }
 
-main {
+h2 {
 
-	margin: 0 auto;
-	display: table-cell;
+	font-family: Dosis, Helvetica, sans-serif;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
 
-section {
-	font-size: 16px;
-}
 
-article {
+/*article {
 
 		font-family: 'Dosis', sans-serif;
 		font-weight: bold;
@@ -100,35 +96,18 @@ article {
 		float: left;
 		display: table;
 
-}
+}*/
 
-span {
+#nav_wrapper {
 
-	font-family: "Indie Flower", cursive;
-	font-variant: small-caps;
-	font-weight: bold;
-	font-size: 30px;
-	letter-spacing: .25em;
-}
 
-hr {
-	   display: block;
-       position: relative;
-       padding: 0;
-       margin: 8px auto;
-       height: 0;
-       width: 60%;
-       max-height: 0;
-       border: none;
-       border-top: 1px solid #000;
-       
 }
 
 nav {
 
+	font-size: 25px;
 	text-align: center;
-	margin: 0 auto;
-	padding: 20px 20px 20px 120px;
+	padding: 0.5em 0.8em 0.5em 2.2em;
 	/*padding here is responsible for tall nav but hover is broken */
 	background: #fff;
 	color: #000;
@@ -141,26 +120,35 @@ nav {
 	font-variant: small-caps;
 	text-decoration: none;
 	font-weight: normal;
-	font-size: 30px;
 	letter-spacing: 0.1em;
 	color: #000;
+	border: 0;
 	border-right: 1px solid #000;
-	padding-right:19px;
-	padding-left: 19px;
+	/*padding-right:13px;
+	padding-left: 23px;*/
+	padding: 0em 0.4em 0em 0.4em;
 	float: left;
 	margin: 0;
 	display: inline-block;
 }
-
-/*either attempt to change main anchor selector one at a time or have all main nav's individual ID's
-added to CSS*/
 
 #home_nav {
 
 	border-left: 1px solid #000;
 	color: #000; 
 	background-color: #FFC51F;
+
 }
+
+/*#home_nav:before {
+    display: none;
+}
+#home_nav:after {
+    content: " ";
+    border: 1px solid black;
+    display: block;
+    max-width: 100px;
+} An idea for an underline under nav page that user is currently on*/
 
 #contact_nav {
 
@@ -175,58 +163,112 @@ added to CSS*/
 	
 }
 
-/*nav a {
-
-	text-decoration: none;
-	color: #000;
-	display: inline-block;
-
-}*/
-
-#hp_nav {
+main {
 
 	font-family: "Amatic SC", cursive;
-	font-size: 55px;
+	font-size: 45px;
 	letter-spacing: 0.3em;
 	border: 0;
-	width: 960px;
-
-}
-
-a {
-	text-decoration: none;
+	margin: 0 auto;
 	
+	
+
 }
 
 ul {
 
 	list-style-type: none;
-	margin: 0;
 	padding: 0;
+	margin: auto;
 
 }
 
 li {
-
-
+	float: left;
+	width: 25%;
+	max-width: 25%;
+	margin: 0.22em;
+	margin-top: 0.89em;
+	padding: 55px 0px 55px 0px;
+	border: 0;
+	background-color: #fff;
+	text-align: center;
 
 }
 
-/*#moon {
+a {
+	text-decoration: none;
+	color: #000;
+}
 
+p {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#mission {
+	font-size: 14px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: bold;
+	line-height: 1.5em;
+	letter-spacing: 0.2em;
+	padding: 45px 10px 45px 10px;
+	margin: 0;
+}
+
+.form5 {
+
+
+	}
+
+.ghost {
+
+	visibility: hidden;
+}
+
+#ghost2 {
 	clear: both;
+	
+}
+
+#moon {
+	clear: both;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+#ghost4 {
+	margin-top: 10px;
+	margin-bottom: 50px;
+	
 }
 
 #asteroids {
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
 
-	clear: both;
-}*/
 
-aside {
+span {
 
-	float: right;
-	clear: both;
+	font-family: "Indie Flower", cursive;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: .25em;
+}
 
+hr {
+	   display: block;
+       position: relative;
+       padding: 0;
+       margin: 0 auto;
+       height: 0;
+       width: 60%;
+       max-height: 0;
+       border: none;
+       border-top: 1px solid #000;
+       
 }
 
 footer {
@@ -234,11 +276,28 @@ footer {
 	text-align: right;
 	clear: both;
 	padding: 1em;
+	margin: 0;
 	font-family: Arial;
 	font-size: 13px;
 	background-color: #fff;
 	/*border-top: 1px solid black;*/
+	display: block;
+	color: #000;
+	height: 100%;
+
 }
+
+#footer_links {
+	text-align: left;
+	float: left;
+	letter-spacing: 2px;
+
+}
+
+#footer_right {
+	float: right;
+}
+
 .clearfix:after { 
    content: "."; 
    visibility: hidden; 

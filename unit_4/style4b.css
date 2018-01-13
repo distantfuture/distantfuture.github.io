@@ -21,6 +21,16 @@
 
 }*/
 
+#mainwrap {
+
+	margin: 0 auto;
+}
+
+header {
+
+	margin-top: 60px;
+}
+
 h1 {
 
 	color: white;
@@ -29,13 +39,17 @@ h1 {
 	font-family: Helvetica, sans-serif;
 	font-size: 50px
 
+
 }
 body {
 
 	text-align: center;
 	color: black;
-	border: dashed;
-
+	width: 100%;
+  	height: auto;
+ 	margin: 0;
+  	padding: 0;
+	
 }
 
 #slogan {
@@ -66,13 +80,11 @@ ul {
 	text-align: center;
 	list-style-type: none;
 }
-a {
+#hpquestions {
 
-	font-family: Helvetica, sans-serif;
-	font-weight: bold;
-	color: black;
-
+	margin-bottom: 3em;
 }
+
 p {
 
 	color: green;
@@ -82,15 +94,38 @@ p {
 	line-height: 1.5em;
 
 } 
+#mmessage {
+
+	margin-bottom: 3em;
+}
+footer {
+
+	padding-bottom: 4em;
+
+}
+a {
+
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	color: black;
+	font-size: 25px;
+
+}
 
 hr {
     background-color: black !important;
     color: dimgrey !important;
     height: 5px !important;
-    width: 300px !important;
+    width: 300px;
 }
-
-#mmessage {
-
-
+.border {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 3px dashed #000;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
