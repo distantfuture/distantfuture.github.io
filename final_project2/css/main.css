@@ -99,7 +99,8 @@ h2 {
 }*/
 
 #nav_wrapper {
-
+	
+	margin: 0 auto;
 
 }
 
@@ -107,11 +108,17 @@ nav {
 
 	font-size: 25px;
 	text-align: center;
-	padding: 0.5em 0.8em 0.5em 2.2em;
-	/*padding here is responsible for tall nav but hover is broken */
+	padding: 0.5em .8em .5em .8em;
+/*	padding: 0.5em 0.8em 0.5em 2.2em;*/
+	/*padding here is was used to center nav before float left in nav_anchor was removed */
 	background: #fff;
 	color: #000;
-	
+
+}
+
+.nav_container {
+	width: 100%;
+	margin: 0 auto;
 }
 
 .nav_anchor {
@@ -127,7 +134,7 @@ nav {
 	/*padding-right:13px;
 	padding-left: 23px;*/
 	padding: 0em 0.4em 0em 0.4em;
-	float: left;
+	/*float: left;*/
 	margin: 0;
 	display: inline-block;
 }
@@ -136,6 +143,7 @@ nav {
 
 	border-left: 1px solid #000;
 	color: #000; 
+	/*background-color: #25BA00; potential new colour*/
 	background-color: #FFC51F;
 
 }
@@ -167,35 +175,57 @@ main {
 
 	font-family: "Amatic SC", cursive;
 	font-size: 45px;
-	letter-spacing: 0.3em;
-	border: 0;
-	margin: 0 auto;
-
-	
-
+	letter-spacing: 0.2em;
+	margin: 3% auto;
+	text-align: center;
 }
 
-.container {
-	float: left;
+.mcontainer {
+	display: inline-block;
 	width: 25%;
-	max-width: 25%;
-	margin: 0.22em;
-	margin-top: 0.89em;
-	padding: 55px 0px 55px 0px;
+	min-height: 200px;
 	border: 0;
 	background-color: #fff;
 	text-align: center;
-
+	vertical-align: top;
+	position: relative;
+	margin: 15px;
+	
 }
 
 a {
 	text-decoration: none;
 	color: #000;
 }
-
 p {
-	padding-top: 15px;
-	padding-bottom: 15px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#stars {
+	background-image: url('../images/flat_space.jpg');
+	background-position: 13% 31%;
+	background-size: 600px;
+}
+
+#planets {
+	background-image: url('../images/flat_space.jpg');
+	background-position: middle right;
+	background-size: 600px;
+}
+#moon {
+	background-image: url('../images/flat_space.jpg');
+	background-position: bottom;
+	background-size: 500px;
+}
+#asteroids {
+	background-image: url('../images/flat_space.jpg');
+	background-position: 23% 42%;
+	background-size: 600px;
 }
 
 #mission {
@@ -203,43 +233,51 @@ p {
 	font-family: 'Dosis', sans-serif;
 	font-weight: bold;
 	line-height: 1.5em;
-	letter-spacing: 0.2em;
-	padding: 45px 10px 45px 10px;
+	letter-spacing: 0.1em;
+	padding: .8em;
+	/*width: 34%;*/
+	/*padding-top: 30px;*/
+	
+}
+
+.missionTextContainer{
 	margin: 0;
+	padding: .94em 0 .71em 0;
+	color: #000;
+	background: #F7F6F4;
+	/*position: absolute;
+	top: 50%;
+	left: 50%;*/
+	/*transform: translate(-50%, -30%);	*/
+}
+
+#mission p {
+	padding: 0;
+	position: relative;
+	transform: none;
+	top: 0;
+	text-align: center;
+	left: 0;
 }
 
 .form5 {
+	color: white;
+	border-radius: 0.22em;
+}
+.form4 {
 
+}
 
-	}
+.form4:hover {
+        -webkit-transform: scale(0.97);
+        -ms-transform: scale(0.97);
+        transform: scale(0.97);
+}
 
 .ghost {
-
 	visibility: hidden;
+	width: 22%
 }
-
-#ghost2 {
-	clear: both;
-	
-}
-
-#moon {
-	clear: both;
-	margin-top: 10px;
-	margin-bottom: 50px;
-}
-
-#ghost4 {
-	margin-top: 10px;
-	margin-bottom: 50px;
-	
-}
-
-#asteroids {
-	margin-top: 10px;
-	margin-bottom: 50px;
-}
-
 
 span {
 
@@ -250,21 +288,30 @@ span {
 	letter-spacing: .25em;
 }
 
-hr {
-	   display: block;
-       position: relative;
-       padding: 0;
-       margin: 0 auto;
-       height: 0;
-       width: 60%;
-       max-height: 0;
-       border: none;
-       border-top: 1px solid #000;
-       
+.line_top {
+	width: 50%;
+	border: none;
+	margin: 1.14em auto;
+	border-top: 0.07em solid #000;
+	padding-bottom: 0.57em;
 }
 
-footer {
+.line_bottom {
+	width: 50%;
+	border: none;
+	margin: 1.14em auto;
+	border-bottom: 0.07em solid #000;
+	padding-top: 0.57em;
+}
+/*.line_bottom {
+	width: 50%;
+	border: none;
+	margin: 16px auto;
+	border-bottom: 1px solid #000;
+	padding-top: 10px;
+}*/
 
+footer {
 	text-align: right;
 	clear: both;
 	padding: 1em;
@@ -275,8 +322,10 @@ footer {
 	/*border-top: 1px solid black;*/
 	display: block;
 	color: #000;
-	height: 100%;
-
+	right: 0;
+  	bottom: 0;
+	left: 0;
+	margin: auto;
 }
 
 #footer_links {
@@ -290,12 +339,90 @@ footer {
 	float: right;
 }
 
+#f_faq, #f_au, #f_c {
+
+	padding: .5em;
+	border: 2px solid black;
+}
+#f_faq:hover, #f_au:hover, #f_c:hover {
+
+	color: white;
+	background-color: black;
+}
+
 .clearfix:after { 
    content: "."; 
    visibility: hidden; 
    display: block; 
    height: 0; 
    clear: both;
+}
+
+@media only screen and (max-width: 966px) {
+	
+	header {
+		height: auto;
+	}
+	img {
+		width: 8%;
+	}
+	h1, h2 {
+		
+		font-size: 1.5em;
+	}
+	#giantq {
+		font-size: 3em;
+		padding-top: 10px;
+	}
+
+	body {
+		margin: 0 auto;
+		width: 100%;
+	}
+	main {
+		font-size: 20px;
+		
+	}
+	#nav_wrapper {
+		margin: 0 auto;
+	}
+	nav {
+		/*padding-left: 118px;*/
+	
+	}
+	.nav_anchor {
+		font-size: .8em;
+	}
+
+	.ghost {
+		display: none;
+	}
+	.form5 {
+		top: 100px;
+		bottom: 80px;
+		width: 12%;
+	}
+
+	#stars {
+		background-position: 15% 37%;
+	}
+	#asteroids {
+		background-position: 23% 39%;
+	}
+	#mission {
+		bottom: 30px;
+		width: 20%;
+		margin: 0;
+	}
+	.line_top {
+		padding-bottom: 0.25em;
+	}
+	footer {
+		position: absolute;
+  		right: 0;
+  		bottom: 0;
+  		left: 0;
+	}
 }
 
 /*#stars {
