@@ -754,7 +754,7 @@ footer {
 	background-size: 1500px;
 	}
 	#footer_links {
-		font-weight: bold;
+		font-size: 1.2em;
 			
 	}
 	@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
