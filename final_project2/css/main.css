@@ -232,7 +232,12 @@ main {
 	margin-bottom: 90px;
 	text-align: center;
 }
-
+#main_img_text {
+	display: none;
+}
+#main_img_notxt {
+	display: none;
+}
 #above_form5 {
 	height: 100px;
 	width: 80%;
@@ -316,8 +321,6 @@ p {
 	clear: both;
 	margin-top: 20px;
 }
-
-
 
 .form4 {
 
@@ -681,6 +684,7 @@ footer {
 	#main_img_wrap {
 		margin: 0;
 		height: 280px;
+		max-width: 800px;
 	}
 	#main_img {
 		margin-bottom: 0;
@@ -727,47 +731,128 @@ footer {
 		display: none;
 	}
 	#stars {
-	background-image: url('../images/flat_space.jpg');
-	/*background-position: 22% 34%;*/
-	background-position: 26.5% 0%;
-	background-size: 1500px;
-	/*background-size: 3000px;*/
+		background-image: url('../images/flat_space.jpg');
+		/*background-position: 22% 34%;*/
+		background-position: 26.5% 0%;
+		background-size: 1500px;
+		/*background-size: 3000px;*/
 	}	
 
 	#planets {
-	background-image: url('../images/flat_space.jpg');
-	background-position: 26.5% 31%;
-	background-size: 1500px;
-	/*background-position: 29% 60%;
-	background-size: 1800px;*/
+		background-image: url('../images/flat_space.jpg');
+		background-position: 26.5% 31%;
+		background-size: 1500px;
+		/*background-position: 29% 60%;
+		background-size: 1800px;*/
 	}
 	#moon {
-	background-image: url('../images/flat_space.jpg');
-	background-position: 26.5% 62.1%;
-	background-size: 1500px;
-	/*background-position: 52% 85%;
-	background-size: 3000px;*/
+		background-image: url('../images/flat_space.jpg');
+		background-position: 26.5% 62.1%;
+		background-size: 1500px;
+		/*background-position: 52% 85%;
+		background-size: 3000px;*/
 	}
 	#asteroids {
-	background-image: url('../images/flat_space.jpg');
-	background-position: 26.5% 93.4%;
-	background-size: 1500px;
+		background-image: url('../images/flat_space.jpg');
+		background-position: 26.5% 93.4%;
+		background-size: 1500px;
 	}
 	#footer_links {
 		font-size: 1.2em;
 			
 	}
-	@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
-
-		#wrapper {
-			width: 95%;
+	@media only screen and (max-width: 700px)
+	 {
+		#main_img_wrap {
+			
+			
 		}
 		#main_img {
-			width: 200px;
+			height: 300px;
+		}
+	}
+	@media only screen and (max-width: 593px) {
+		#hb_menu {
+			width: 94%;
+		}	
+		main {
+			font-size: 75px;
+		}
+		#main_img {
+			height: 260px;
+		}
+		#footer_links {
+			font-size: 1em;
+		}
+		#footer_right {
+			font-size: .8em;
+		}
+	@media only screen and (max-width: 425px) {
+		main {
+			height: 1050px;
+		}
+		#hb_menu {
+			width: 93%;
 		}
 		#main_img_wrap {
-			max-width: 200px;
+			position: relative;
+			height: 200px;
+			text-align: center;
 		}
+		#main_img {
+			display: none;
+		}
+		#main_img_text {
+			display: initial;
+			color: white;
+			font-size: 35px;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		transform: translate(-50%, -50%);
+		}
+		#main_img_notxt {
+			display: initial;
+			width: 100%;
+			height: 200px;
+    		z-index: -1;
+		}
+	}
+	@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
+
+	#wrapper {
+		width: 97%;
+		margin: 0 auto;
+	}
+	header {
+		margin: 0 auto;
+	}
+	.earth_text {
+		display: none;
+	}
+	.earth_logo {
+		text-align: center;
+		margin: 0.5em;
+		padding-left: 1em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		height: auto;
+		max-width: 100%;
+	
+	}
+	#main_img {
+		width: 97%;
+	}
+	#main_img_wrap {
+		
+	}
+	
+	}
+	@media screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 2){
+
 	}
 
 
