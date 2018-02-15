@@ -863,7 +863,7 @@ footer {
 		}
 		.earth_logo {
 			width: 62px;
-			margin-left: 136px; 
+			margin-left: 135.5px; 
 		}
 		.earth_text {
 			display: none;
@@ -874,6 +874,16 @@ footer {
 		#stars {
 			background-position: 26.5% 2%;
 		}	
+		#footer_links {
+			font-size: .8em;
+		}
+		#footer_right {
+			position: relative;
+			
+			font-size: .7em;
+			padding: 0;
+			margin: 0;
+		}
 	}
 
 
