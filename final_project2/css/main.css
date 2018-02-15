@@ -823,37 +823,57 @@ footer {
 	}
 	@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
 
-	#wrapper {
-		width: 97%;
-		margin: 0 auto;
-	}
-	header {
-		margin: 0 auto;
-	}
-	.earth_text {
-		display: none;
-	}
-	.earth_logo {
-		text-align: center;
-		margin: 0.5em;
-		padding-left: 1em;
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
-		height: auto;
-		max-width: 100%;
-	
-	}
-	#main_img {
-		width: 97%;
-	}
-	#main_img_wrap {
+		#wrapper {
+			width: 97%;
+			margin: 0 auto;
+		}
+		header {
+			margin: 0 auto;
+		}
+		.earth_text {
+			display: none;
+		}
+		.earth_logo {
+			text-align: center;
+			margin: 0.5em;
+			padding-left: 1em;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			height: auto;
+			max-width: 100%;
 		
-	}
+		}
+		#main_img {
+			width: 97%;
+		}
+		#main_img_wrap {
+			
+		}
 	
 	}
 	@media screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 2){
-
+		main {
+			font-size: 60px;
+		}
 	}
+	@media screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2){
+		header {
+			height: auto;
 
+		}
+		.earth_logo {
+			width: 62px;
+			margin-left: 136px; 
+		}
+		.earth_text {
+			display: none;
+		}
+		main {
+			font-size: 50px;
+		}
+		#stars {
+			background-position: 26.5% 2%;
+		}	
+	}
 
 
