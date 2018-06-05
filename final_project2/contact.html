@@ -2,7 +2,7 @@
 <html>
 	<head>
 			<title>Where's the Earth?</title>
-			<link rel="stylesheet" type="text/css" href="css/aboutus.css">
+			<link rel="stylesheet" type="text/css" href="css/contact.css">
 			<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"/> -->
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
@@ -52,36 +52,58 @@
 			</div>
 
 
-			<main class="clearfix">
-				<div id="column1" class="clearfix columns mcontainer">
-					<!-- <hr id="journey_linet" class="line_top"> -->
-					<div id="j_lt" class="line_top2 lines"></div>
-					<h3 id="journeyhead">A journey of two achievable outcomes:</h3><p>Teaching the future minds of tomorrow about the solar system we live in<br><span id="andsym">&</span><br>a personal learning experience in the fundamentals of HTML, CSS, Web Design and Javascript... 
-					<br>
-					<br>
-					A great appreciation for those who have spent any time on this site and any feedback is encouraged and welcomed!</p>
-					<div id="j_lb" class="line_bottom2 lines"></div>
-					<!-- <hr id="journey_lineb" class="line_bottom"> -->
-				</div>
-				<div id="column2" class="clearfix columns mcontainer">	
-					<!-- <hr id="persons_linet" class="line_top"> -->
-					<div id="pi_lt" class="line_top2 lines"></div>
-					<h3>Persons Involved:</h3>
-					<ul>
-						<li>Cris Plaza - Website creater, moderator and all round straight shooter</li>
-						<br>
-						<li>Rachel Demarco - Research and Motivator</li>
-						<br>
-						<li> Margaret Huang - A sefless yet incredibly helpful hand and a guide to accomplish coding and design goals.
-						<br>
-						<br>
-						<li>General Assembly - Creater of an engaging, fun and accessible online course</li>
-					</ul>
-					<div id="pi_lb" class="line_bottom2 lines"></div>
-					<!-- <hr id="persons_lineb" class="line_bottom"> -->
-				</div>
-
-			</main>
+				<main class="clearfix container">
+					<div id="container_top" class="clearfix">
+						<div id="chead_cont">
+							<h3>Contact Us</h3>
+						</div>
+						<div id="content_input">
+							<h4>General Questions?</h4>
+							<h4>Got some insightful Feedback?</h4>
+							<h4>Contacting us is super easy, just fill in your details below!</h4>
+						</div>
+					</div>			
+				  	<form action="action_page.php">
+				  		<div id="names_cont">
+					  		<div id="fname_wrap" class="names_wrap clearfix">
+					   			<label for="fname">First Name</label>
+					    			<input type="text" id="fname" name="firstname" placeholder="Your name.." class="bnames">
+					    	</div>
+					    	<div id="lname_wrap" class="names_wrap clearfix">
+						    	<label for="lname">Last Name</label>
+					   				<input type="text" id="lname" name="lastname" placeholder="Your last name.." class="bnames">
+					   		</div>
+					   	</div>
+				   		<div id="country_wrap" class="optionbox clearfix">		
+						    <label for="country">Country</label>
+						    	<select id="country" name="country">
+									<option value="asia">Asia/Pacific</option>
+									<option value="australia">Australia</option>
+									<option value="canada">Canada</option>
+									<option value="europe">Europe</option>
+									<option value="uk">UK</option>
+									<option value="usa">USA</option>
+									<option value="nz">New Zealand</option>
+						    	</select>
+						</div>		
+					<!-- 	<div id="hearabout_wrap" class="optionbox clearfix">
+							<label for="hearabout">Find us?</label>
+								<select id="hearabout" name="hearabout">
+									<option value="google">Google</option>
+									<option value="socials">Social Media</option>
+									<option value="education">Schools or Education</option>
+									<option value="other">Other</option>
+								</select>
+						</div> Ads a where did you find us box but had to decrease 'Label' font to fit.-->
+						<div id="subject_wrap">
+					    	<label for="subject">Subject</label>
+					    		<textarea id="subject" name="subject" placeholder="Waiting for your message.." style="height:150px"></textarea>
+					    </div>
+						<div id="submit_wrap">
+						    	<input type="submit" value="Submit" href="mailto:wherestheearth@gmail.com">
+					    </div>
+				  	</form>
+				</main>
 
 			<footer class="clearfix"> 
 				<div id="footer_right">&copy 2017 distantfuture</div>

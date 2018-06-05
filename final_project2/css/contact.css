@@ -130,7 +130,7 @@ nav {
 	border-left: 1px solid #000;
 }
 
-#aboutus_nav {
+#contact_nav {
 
 	color: #000; 
 	background-color: #B4F6FC;
@@ -167,111 +167,115 @@ nav {
 }
 
 main {
-
-	font-family: "Amatic SC", cursive;
-	font-size: 10px;
-	margin: 3% auto;
-	margin-top: 0;
-	text-align: left;
-	/*letter-spacing: .1em;*/
-}
-
-.mcontainer {
-	display: inline-block;
-	min-height: 200px;
-	border: 0;
-	background-color: #F2F2F2;
-	vertical-align: top;
-	position: relative;
-	margin: 15px;
-	
-}
-
-.columns {
-	max-width: 400px;
-	/*width: 39% this is before border was added and background was white;*/
-	width: 37%;
-	height: 500px;
-	margin: 100px 20px 100px 20px;
-	padding: 30px;
-	border: 12px solid white;
-	border-radius: 1em;
-	/*-webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.52);
-	-moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.52);
-	box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.52);*/
-}
-
-hr {
-	width: 200px;
+	margin: 5% auto;
 	font-size: 30px;
-	/*fontsize here is resposible of thicker lines*/
-}
-/*.line_top {
-	width: 50%;
-	border: none;
-	margin: 1.14em auto;
-	border-top: 0.07em solid #000;
-	padding-bottom: 0.57em;
+	background-color: #fff;
+	width: 80%;
+	border-radius: .5em;
+
 }
 
-.line_bottom {
-	width: 50%;
-	border: none;
-	margin: 1.14em auto;
-	border-bottom: 0.07em solid #000;
-	padding-top: 0.57em;
-}To style old hr tag which is now replaced by immediate below*/
-
-.line_top2, .line_bottom2 {
-	border-top: 1px solid #000;
-	/*border top pixel count is responsible for thickness*/
-	border-height: 30px;
-	padding-top: 40px;
-	width: 50%;
+#container_top {
 	text-align: center;
-	margin: 0 auto;
-	margin-top: 32px;
-	margin-bottom: 45px;
-	padding: 0;
 	box-sizing: border-box;
+	margin-bottom: 40px;
+}
 
+.container {
+	background-color: #f2f2f2;
+	box-sizing: border-box;
+	border-radius: .5em;
+	border: 12px solid #fff;
+	padding: 1.5em;
 }
-.line_bottom2 {
-	margin-top: 63.5px;
-}
-#journey_lineb {
-	/*position: relative;
-	bottom: 40%;*/
+
+label {
+	font-family: "Amatic SC", cursive;
+	font-size: 38px;
+	letter-spacing: .2em;
 }
 
 h3 {
-	font-size: 30px;
+	font-family: "Amatic SC", cursive;
+	color: #000;
 	font-weight: normal;
-	/*border and padding could be an interesting way to achieve same result*/
+	font-size: 2em;
+	font-variant: small-caps;
+	margin: 0;
+	padding: 0;
 }
 
 a {
 	text-decoration: none;
 	color: #000;
 }
-p {
-	font-size: 20px;
-	margin: 0;
-	padding: 0;
+
+h4 {
 	font-family: 'Dosis', sans-serif;
-	padding-left: 40px;
+	font-size: .8em;
+	font-weight: normal;
+}
+
+#fname, #lname, #country, #subject, #hearabout {
+	font-family: 'Dosis', sans-serif;
+	font-size: 15px;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 
 }
-li {
-	font-size: 20px;
-	list-style-type: none;
-	text-align: left;
-	font-family: 'Dosis', sans-serif;
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
-#andsym {
-	position: relative;
-	left: 40%;
+
+#names_cont {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.names_wrap {
+	width: 48%;
+	display: inline-block;
+	margin: auto;
+	margin: 0 0.15em 0 0.15em; 
+	text-align: left;
+}
+
+#country_wrap {
+	margin: 0 auto;	
+}
+
+.optionbox {
+	width: 45%;
+	text-align: center;
+}
+
+#subject_wrap {
+	width: 100%;
+	margin-top: 1em;
 	
+}
+
+#submit_wrap {
+	text-align: center;
 }
 
 footer {
@@ -357,19 +361,6 @@ footer {
 		font-size: .85em;
 		padding: 0em 0.8em 0em 0.8em;
 	}
-	main {
-		font-size: 10px;
-	}
-	p, li {
-		font-size: 1.91em;
-
-	}
-	.columns {
-		height: 500px;
-	}
-	#journeyhead {
-		/*margin-bottom: 0;*/
-	}
 	
 	footer {
   		right: 0;
@@ -379,27 +370,10 @@ footer {
 	}
 
 }
-@media only screen and (max-width: 942px) {
-	.mcontainer {
-		display: block;
-		margin: 0 auto;
-		margin-top: 40px;
-		margin-bottom: 40px;
-	}
-	.columns {
-		max-width: 100%;
-		width: 57%;
-		height: 450px;
 
-	}
-	.line_top2, .line_bottom2 {
-		
-	}
-
-}
-@media only screen and (max-width: 919px) {
-	#pi_lb {
-		margin-top: 45px;
+@media only screen and (max-width: 938px) {
+	.names_wrap {
+		width: 47%;
 	}
 }
 @media only screen and (max-width: 903px){
@@ -407,19 +381,12 @@ footer {
 		padding: 0em 0.7em 0em 0.7em;
 	}
 }
-@media only screen and (max-width: 893px) {
-	.line_bottom2 {
-		margin-bottom: 0;
-	}
-}
-@media only screen and (max-width: 858px){
+@media only screen and (max-width: 858px) {
 	.nav_anchor {
 		padding: 0em 0.6em 0em 0.6em;
 	}
-	.columns {
-		width: 60%;
-	}
 }
+
 @media only screen and (max-width: 825px) {
 	/*.nav_anchor {
 		border: none;
@@ -594,33 +561,23 @@ footer {
 		font-size: 1.2em;
 			
 	}
-	@media only screen and (max-width: 770px) {
-		main {
-			font-size: 9px;
+	@media only screen and (max-width: 778px) {
+		main { 
+			font-size: 25px;
 		}
-		h3 {
-			
-			padding-top: 10px;
+		label {
+			font-size: 32px;
 		}
-		.columns {
-			height: 400px;
-		}
-		.lines {
-			margin-bottom: 29px;
-		}
-
 
 	}
-	@media only screen and (max-width: 696px) {
-		.columns {
-			height: 425px;
+	@media only screen and (max-width: 657px) {
+		main {
+			font-size: 22px;
+		}
+		label {
+			font-size: 30px;
 		}
 		
-	}
-	@media only screen and (max-width: 620px) {
-		#j_lb {
-			margin-top: 52px;
-		}
 	}
 	@media only screen and (max-width: 593px) {
 		#hb_menu {
@@ -632,58 +589,12 @@ footer {
 		#footer_right {
 			font-size: .8em;
 		}
-	@media only screen and (max-width: 575px) {
-		h3 {
-			font-size: 28px;
+	@media only screen and (max-width: 555px) {
+		#names_cont {
+			width: 70%;
 		}
-	}
-	@media only screen and (max-width: 525px) {
-		.columns {
-			height: 445px;
-		}
-
-	}
-	@media only screen and (max-width: 520px) {
-		h3 {
-			padding-top: 15px;
-		}
-		.columns {
-			height: 450px;
-		}
-		#pi_lb {
-			margin-top: 40px;
-		}
-	}
-	@media only screen and (max-width: 507px) {
-		h3 {
-			font-size: 27px;
-			font-weight: normal;
-		}
-		.line_top2 {
-			margin-top: 25px;
-		}
-		#pi_lt {
-			margin-bottom: 15px;
-		}
-		#pi_lb {
-			margin-top: 25px;
-		}
-	}
-	@media only screen and (max-width: 490px) {
-		main {
-			font-size: 8px;
-			letter-spacing: .1em;
-		}
-		h3 {
-			letter-spacing: 0;
-		}
-	}
-	@media only screen and (max-width: 488px) {
-		.columns {
-			height: 470px;
-		}
-		#pi_lb {
-			margin-top: 40px;
+		.names_wrap {
+			display: initial;
 		}
 	}
 	@media only screen and (max-width: 468px) {
@@ -691,11 +602,6 @@ footer {
 			width: 93%;
 		}
 		
-	}
-	@media screen and (max-width: 426px) {
-		#j_lb {
-			margin-top: 39px;
-		}
 	}
 	@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
 

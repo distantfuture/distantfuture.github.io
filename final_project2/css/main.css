@@ -266,22 +266,23 @@ p {
 }
 
 #mission {
-	font-size: 14px;
+	font-size: 15px;
 	font-family: 'Dosis', sans-serif;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	line-height: 1.5em;
 	letter-spacing: 0.1em;
 	padding: .8em;
 	width: 25%;
 	max-width: 200px;
-	
+	border-radius: 1em;
 }
 
 .missionTextContainer{
 	margin: 0;
 	padding: .94em 1em .71em 1em;
 	color: #000;
-	background: #F7F6F4;
+	/*background: #F7F6F4; old colour*/
+	background: #F2F2F2;
 	max-width: 172px;
 	/*position: absolute;
 	top: 50%;
@@ -327,7 +328,7 @@ span {
 
 	font-family: "Indie Flower", cursive;
 	font-variant: small-caps;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 30px;
 	letter-spacing: .25em;
 }
