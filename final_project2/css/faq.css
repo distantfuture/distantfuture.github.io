@@ -12,9 +12,7 @@ body {
 	padding: 0;
 	height: auto;
 	width: 1024px;
-	/*-webkit-box-shadow: 0px 0px 24px 10px rgba(161,161,161,1);
-	-moz-box-shadow: 0px 0px 24px 10px rgba(161,161,161,1);
-	box-shadow: 0px 0px 24px 10px rgba(161,161,161,1);*/
+
 }
 
 header {
@@ -92,6 +90,7 @@ h2 {
 	border: 0;
 }
 
+
 #nav_wrapper {
 	
 	margin: 0 auto;
@@ -127,10 +126,12 @@ nav {
 	margin: 0;
 	display: inline-block;
 }
-
 #home_nav {
-
 	border-left: 1px solid #000;
+}
+
+#faq_nav {
+
 	color: #000; 
 	background-color: #B4F6FC;
 	/*background-color: #FFC51F; Original colour*/
@@ -166,203 +167,89 @@ nav {
 }
 
 main {
-
-	font-family: "Amatic SC", cursive;
-	font-size: 45px;
-	letter-spacing: 0.2em;
-	margin: 3% auto;
-	margin-top: 0;
-	text-align: center;
-}
-
-.mcontainer {
-	display: inline-block;
-	width: 25%;
-	min-height: 200px;
-	border: 0;
+	margin: 5% auto;
+	font-size: 30px;
 	background-color: #fff;
-	text-align: center;
-	vertical-align: top;
-	position: relative;
-	margin: 15px;
-	
-}
-
-.main_line{
-	height: 0;
-	color: white;
-	border: 20px solid white;
-}
-
-#main_img_wrap {
-	display: block;
-	height: 480px;
-	margin: 0 auto;
-	padding: 0;
-	border: 0;
-	/*max-width: 1024px;*/
-	text-align: center;
-
-}
-
-#main_img {
-	
-	width: 100%;
-	padding: 0;
-	border: 0;
-	margin: 0;
-	margin-bottom: 90px;
-	text-align: center;
-}
-#main_img_text {
-	display: none;
-}
-#main_img_notxt {
-	display: none;
-}
-#above_form5 {
-	display: none;
-	height: 100px;
 	width: 80%;
-	border-top: 40px solid white;
-	/*border-bottom: 20px solid white;*/
-	margin: 0 auto;
-	/*border-radius: 0.22em; This is for rounded corners*/
+	border-radius: .5em;
+
+}
+
+#container_top {
+	text-align: center;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+
+.container {
+	background-color: #f2f2f2;
+	box-sizing: border-box;
+	border-radius: .5em;
+	border: 12px solid #fff;
+	padding: 1.5em;
+}
+
+h3 {
+	font-family: "Amatic SC", cursive;
+	color: #000;
+	font-weight: normal;
+	font-size: 2em;
+	font-variant: small-caps;
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	font-family: "Dosis", sans-serif;
+	color: #000;
+	font-weight: normal;
+	font-size: .6em;
+	margin: 0;
+	padding: 0;
+}
+
+#seebelow_wrap {
+	margin: 20px auto;
+
+}
+
+#faq_linebreak {
+	margin: 40px auto;
+	border-bottom: 1px solid black;
+	width: 40%;
 }
 
 a {
 	text-decoration: none;
 	color: #000;
 }
-p {
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
 
-#stars {
-	background-image: url('../images/flat_space.jpg');
-	background-position: 11% 31%;
-	background-size: 600px;
-}
-
-#planets {
-	background-image: url('../images/flat_space.jpg');
-	background-position: middle right;
-	background-size: 600px;
-}
-#moon {
-	background-image: url('../images/flat_space.jpg');
-	background-position: bottom;
-	background-size: 500px;
-}
-#asteroids {
-	background-image: url('../images/flat_space.jpg');
-	background-position: 25% 42%;
-	background-size: 600px;
-}
-
-#mission {
-	font-size: 15px;
+#questions h5 {
 	font-family: 'Dosis', sans-serif;
-	/*font-weight: bold;*/
-	line-height: 1.5em;
-	letter-spacing: 0.1em;
-	padding: .8em;
-	width: 25%;
-	max-width: 200px;
-	border-radius: 1em;
-}
-
-.missionTextContainer{
-	margin: 0;
-	padding: .94em 1em .71em 1em;
-	color: #000;
-	/*background: #F7F6F4; old colour*/
-	background: #F2F2F2;
-	max-width: 172px;
-	/*position: absolute;
-	top: 50%;
-	left: 50%;*/
-	/*transform: translate(-50%, -30%);	*/
-}
-
-#mission p {
-	padding: 0;
-	position: relative;
-	transform: none;
-	top: 0;
-	text-align: center;
-	left: 0;
-}
-
-.form5 {
-	color: white;
-	border-radius: 0.22em;
-	width: 22%;
-	clear: both;
-	margin-top: 20px;
-}
-
-.form4 {
-
-}
-
-.form4:hover {
-        -webkit-transform: scale(0.97);
-        -ms-transform: scale(0.97);
-        transform: scale(0.97);
-        opacity: 0.5;
-        transition: all 0.3s ease-in-out;
-}
-
-.ghost {
-	visibility: hidden;
-	width: 22%
-}
-
-#moonspan {
-
-	font-family: "Indie Flower", cursive;
-	font-variant: small-caps;
+	font-size: .8em;
 	font-weight: normal;
-	font-size: 30px;
-	letter-spacing: .25em;
-	-webkit-font-smoothing: antialiased;
+	text-align: left;
 }
 
-.line_top {
-	width: 50%;
-	border: none;
-	margin: 1.14em auto;
-	border-top: 0.07em solid #000;
-	padding-bottom: 0.57em;
+#questions a {
+	padding-left: .4em;
+	font-size: 1.2em;
 }
 
-.line_bottom {
-	width: 50%;
-	border: none;
-	margin: 1.14em auto;
-	border-bottom: 0.07em solid #000;
-	padding-top: 0.57em;
+#questions a:hover {
+	color: #232323;
+	-webkit-transform: scale(5.3);
+    -ms-transform: scale(5.3);
+    transform: scale(5.3);
 }
-/*.line_bottom {
-	width: 50%;
-	border: none;
-	margin: 16px auto;
-	border-bottom: 1px solid #000;
-	padding-top: 10px;
-}*/
+
 
 footer {
 	text-align: right;
 	clear: both;
 	padding: 1.8em;
 	margin: 0 auto;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	font-family: Arial;
 	font-size: 13px;
 	background-color: #fff;
@@ -414,10 +301,10 @@ footer {
 	}
 	img {
 		/*width: 8%;*/
-		width: 77.28px;
+		width: 87.28px;
 	}
 	h1, h2 {
-		font-size: 1.5em;
+		font-size: 1.7em;
 	}
 	#logotext {
 		margin-top: 1.8em;
@@ -435,69 +322,12 @@ footer {
 	#nav_wrapper {
 		margin: 0 auto;
 	}
-	nav {
-		/*padding-left: 118px;*/
 	
-	}
 	.nav_anchor {
 		font-size: .85em;
 		padding: 0em 0.8em 0em 0.8em;
 	}
-	main {
-		font-size: 26px;
-		height: 1000px;
-		letter-spacing: .2em;
-	}
-	#main_img_wrap {
-		height: 407px;
-		margin-bottom: 130px;
-	}
-	#above_form5 {
-		margin-top: 62px;
-		border-top: 20px solid white;
-	}
-	.ghost {
-		display: none;
-	}
-	.form5 {
-		top: 20px;
-		bottom: 80px;
-		width: 14%;
-	}
-	#form4_wrap {
-		border-top: 40px solid white;
-		/*border-bottom: 40px solid white;*/
-		padding-top: 40px;
-		padding-bottom: 140px;
-		margin-top: 73px;
-	}
-	.form4 {
-		top: 43px;
-	}
-
-	#stars {
-		background-position: 12% 10%;
-	}
-	#asteroids {
-		background-position: 23% 39%;
-	}
-	#mission {
-		bottom: 30px;
-		width: 20%;
-		min-width: 172px;
-		max-width: 172px;
-		margin: 0;
-	}
-	#missionTextContainer {
-		min-width: 172px;
-		padding: .94em 0 .71em 0;
-		
-		
-	}
-	.line_top {
-		padding-bottom: 0.25em;
-	}
-
+	
 	footer {
   		right: 0;
   		bottom: 0;
@@ -506,16 +336,23 @@ footer {
 	}
 
 }
+
+@media only screen and (max-width: 938px) {
+	.names_wrap {
+		width: 47%;
+	}
+}
 @media only screen and (max-width: 903px){
 	.nav_anchor {
 		padding: 0em 0.7em 0em 0.7em;
 	}
 }
-@media only screen and (max-width: 858px){
+@media only screen and (max-width: 858px) {
 	.nav_anchor {
 		padding: 0em 0.6em 0em 0.6em;
 	}
 }
+
 @media only screen and (max-width: 825px) {
 	/*.nav_anchor {
 		border: none;
@@ -626,14 +463,15 @@ footer {
 	.burger {
 		background: #000;
 	}
-
 	/*
 	 * This is for when the hamburger is menu is open 
 	 */
-	#hb_menu {
+
+	#hb_menu
+	{
 	  position: absolute;
 	  max-width: 767px;
-	  width: 95.9%;
+	  width: 95.7%;
 	  margin: -41px 0 0 -50px;
 	  /*margin: -5.371% 0 0 -6.393%;*/
 	  padding: 50px;
@@ -661,24 +499,11 @@ footer {
 	#menuToggle input:checked ~ ul {
 	  transform: none;
 	}
-	/*#form4_wrap {
-		border-top: 20px solid white;
+	#pi_lb {
+		margin-top: 50px;
+	}
 
-	}*/
-	main {
-		height: 1100px;
-		font-size: 100px;
-		letter-spacing: .1em;
-	}
-	#main_img_wrap {
-		margin: 0;
-		height: 280px;
-		max-width: 825px;
-	}
-	#main_img {
-		margin-bottom: 0;
-	}
-	.mcontainer {
+	/*.mcontainer {
 		
 		width: 90%;
 		min-height: 200px;
@@ -688,127 +513,53 @@ footer {
 		vertical-align: top;
 		position: relative;
 		margin: 0 auto;
-	}
-	#above_form5 {
-		width: 100%;
-		height: 0;
-		border-top: 40px solid white;
-		display: none;
-	}
-	.form5 {
-		top: 50px;
-		clear: both;
-		
-		
-	}
-	.form4 {
-		height: 200px;
-		width: 100%;
-		top: 70px;
-		margin: 0;
-		border-radius: 0;
-		
-	}
-	.form4:hover {
-        -webkit-transform: scale(0.99);
-        -ms-transform: scale(0.99);
-        transform: scale(0.99);
-        opacity: 0.7;
-        transition: all 0.3s ease-in-out;
-	}
-	#mission {
-		display: none;
-	}
-	#stars {
-		background-image: url('../images/flat_space.jpg');
-		/*background-position: 22% 34%;*/
-		background-position: 26.5% 0%;
-		background-size: 1500px;
-		/*background-size: 3000px;*/
-	}	
-
-	#planets {
-		background-image: url('../images/flat_space.jpg');
-		background-position: 26.5% 31%;
-		background-size: 1500px;
-		/*background-position: 29% 60%;
-		background-size: 1800px;*/
-	}
-	#moon {
-		background-image: url('../images/flat_space.jpg');
-		background-position: 26.5% 62.1%;
-		background-size: 1500px;
-		/*background-position: 52% 85%;
-		background-size: 3000px;*/
-	}
-	#asteroids {
-		background-image: url('../images/flat_space.jpg');
-		background-position: 26.5% 93.4%;
-		background-size: 1500px;
-	}
+	}*/
+	
 	#footer_links {
 		font-size: 1.2em;
 			
 	}
-	@media only screen and (max-width: 700px)
-	 {
-		#main_img_wrap {
-			
-			
+	@media only screen and (max-width: 778px) {
+		main { 
+			font-size: 25px;
 		}
-		#main_img {
-			height: 300px;
+		label {
+			font-size: 32px;
 		}
+
+	}
+	@media only screen and (max-width: 657px) {
+		main {
+			font-size: 22px;
+		}
+		label {
+			font-size: 30px;
+		}
+		
 	}
 	@media only screen and (max-width: 593px) {
 		#hb_menu {
 			width: 94%;
 		}	
-		main {
-			font-size: 75px;
-		}
-		#main_img {
-			height: 260px;
-		}
 		#footer_links {
 			font-size: 1em;
 		}
 		#footer_right {
 			font-size: .8em;
 		}
-	@media only screen and (max-width: 468px) {
-		main {
-			height: 1050px;
+	@media only screen and (max-width: 555px) {
+		#names_cont {
+			width: 70%;
 		}
+		.names_wrap {
+			display: initial;
+		}
+	}
+	@media only screen and (max-width: 468px) {
 		#hb_menu {
 			width: 93%;
 		}
-		#main_img_wrap {
-			position: relative;
-			height: 200px;
-			text-align: center;
-		}
-		#main_img {
-			display: none;
-		}
-		#main_img_text {
-			display: initial;
-			color: white;
-			font-size: 35px;
-			padding: 0;
-			margin: 0;
-			width: 100%;
-			position: absolute;
-    		top: 50%;
-    		left: 50%;
-    		transform: translate(-50%, -50%);
-		}
-		#main_img_notxt {
-			display: initial;
-			width: 100%;
-			height: 200px;
-    		z-index: -1;
-		}
+		
 	}
 	@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
 
@@ -832,12 +583,6 @@ footer {
 			max-width: 100%;
 		
 		}
-		#main_img {
-			width: 97%;
-		}
-		#main_img_wrap {
-			
-		}
 	
 	}
 	@media screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 2){
@@ -860,12 +605,6 @@ footer {
 		}
 		main {
 			font-size: 62px;
-		}
-		#main_img_text {
-			font-size: 43px;
-		}
-		#stars {
-			background-position: 27.5% 4%;
 		}	
 		#footer_links {
 			font-size: .8em;
@@ -888,13 +627,6 @@ footer {
 		}
 		main {
 			font-size: 50px;
-		}
-		#stars {
-			background-position: 30% 5%;
-		}
-		#main_img_wrap {
-			width: 100%;
-			
 		}
 		footer {
 			padding: 1.2em;

@@ -448,7 +448,7 @@ footer {
 	}
 
 	/*
-	 * Just a quick hamburger
+	 * This is for hamburger icon
 	 */
 	#menuToggle span
 	{
@@ -474,10 +474,6 @@ footer {
 	  transform-origin: 0% 100%;
 	}
 
-	/* 
-	 * Transform all the slices of hamburger
-	 * into a crossmark.
-	 */
 	#menuToggle input:checked ~ span
 	{
 	  opacity: 1;
@@ -485,9 +481,6 @@ footer {
 	  background: #000;	  /*This is to edit the X*/
 	}
 
-	/*
-	 * But let's hide the middle one.
-	 */
 	#menuToggle input:checked ~ span:nth-last-child(3)
 	{
 	  opacity: 0;
@@ -495,22 +488,18 @@ footer {
 
 	}
 
-	/*
-	 * Ohyeah and the last one should go the other direction
-	 */
 	#menuToggle input:checked ~ span:nth-last-child(2)
 	{
 	  transform: rotate(-45deg) translate(0, -1px);
 	  background: #000;
 	}
 
-	/*
-	 * Make this absolute positioned
-	 * at the top left of the screen
-	 */
 	.burger {
 		background: #000;
 	}
+	/*
+	 * This is for when the hamburger is menu is open 
+	 */
 	#hb_menu
 	{
 	  position: absolute;
@@ -532,11 +521,13 @@ footer {
 
 	#hb_menu li {
 	  padding: 10px 0;
-	  font-size: 35px;
+	  font-size: 45px;
+	  font-family: 'Dosis', sans-serif;
+	  text-align: center;
 	}
 
 	/*
-	 * And let's slide it in from the left
+	 * This will make it slide from the left
 	 */
 	#menuToggle input:checked ~ ul {
 	  transform: none;
